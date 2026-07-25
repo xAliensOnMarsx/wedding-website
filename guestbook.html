@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guestbook | Levi & Addy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="guestbook-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+
+<a href="index.html" class="logo">
+    L &amp; A
+</a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="story.html">Our Story</a>
+                <a href="wedding.html">Wedding</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faq.html">FAQ</a>
+                <a href="guestbook.html" class="active">Guestbook</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="guestbook-main">
+
+        <!-- Hero -->
+        <section class="guestbook-hero">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">Leave Us A Note</p>
+
+                <div class="floral-divider">
+                    <span>❦</span>
+                </div>
+
+                <h1>Our Guestbook</h1>
+
+                <p>
+                    Share a favorite memory, a piece of advice,
+                    or simply leave us a little love.
+                </p>
+
+                <div class="floral-divider">
+                    <span>❦</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Guestbook Form -->
+        <section class="guestbook-form-section">
+
+            <div class="guestbook-card">
+
+                <div class="guestbook-card-heading">
+                    <p class="eyebrow">For Levi &amp; Addy</p>
+                    <h2>Sign Our Guestbook</h2>
+                    <p>
+                        We'd love to have a message from you to look back on
+                        for years to come.
+                    </p>
+                </div>
+
+
+<form
+    class="guestbook-form"
+    id="guestbookForm"
+    action="https://formspree.io/f/mkodvayb"
+    method="POST"
+>
+                    <div class="form-group">
+                        <label for="guestName">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="guestName"
+                            name="guestName"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="guestMessage">Your Message</label>
+
+                        <textarea
+                            id="guestMessage"
+                            name="guestMessage"
+                            rows="7"
+                            maxlength="500"
+                            placeholder="Write a message for Levi and Addy..."
+                            required></textarea>
+
+                        <div class="character-count">
+                            <span id="characterCount">0</span> / 500
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="guestbook-submit">
+                        Sign the Guestbook
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+        <div class="guestbook-modal" id="guestbookSuccess" aria-hidden="true">
+
+    <div class="guestbook-modal-card">
+
+        <button
+            class="guestbook-modal-close"
+            type="button"
+            aria-label="Close thank you message">
+            ×
+        </button>
+
+        <span class="guestbook-modal-heart">♡</span>
+
+        <h2>Thank You!</h2>
+
+        <p>
+            Your message has been added to our guestbook.
+        </p>
+
+        <span class="guestbook-modal-signature">
+            With love, Levi &amp; Addy
+        </span>
+
+    </div>
+
+</div>
+
+
+        <!-- Decorative Message -->
+        <section class="guestbook-closing">
+
+            <div class="guestbook-closing-content">
+
+                <div class="floral-divider">
+                    <span>❦</span>
+                </div>
+
+                <p class="guestbook-quote">
+                    “The best memories are the ones we make
+                    with the people we love.”
+                </p>
+
+                <p class="guestbook-signature">
+                    Levi &amp; Addy
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Gallery | Levi & Addy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="gallery-page">
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">L & A</a>
+
+<button
+    class="menu-toggle"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="wedding.html">Wedding</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="faq.html">FAQ</a>
+        <a href="guestbook.html">Guestbook</a>
+    </div>
+</nav>
+
+<main class="gallery-main">
+
+    <section class="gallery-header">
+
+        <p class="gallery-eyebrow">
+            Our Memories
+        </p>
+
+        <h1>Our Gallery</h1>
+
+        <div class="gallery-divider">
+            <span></span>
+            <span class="flower">❦</span>
+            <span></span>
+        </div>
+
+        <p class="gallery-intro">
+            A few of our favorite memories together.
+            We can't wait to make even more as we begin
+            this next chapter of our lives.
+        </p>
+
+    </section>
+<section class="gallery-grid">
+
+    <button class="gallery-card gallery-featured" type="button">
+        <img src="images/gallery-05.jpg" alt="Levi and Addy together outdoors">
+    </button>
+
+    <button class="gallery-card gallery-portrait" type="button">
+        <img src="images/gallery-01.jpg" alt="Levi giving Addy a piggyback ride">
+    </button>
+
+    <button class="gallery-card gallery-portrait" type="button">
+        <img src="images/gallery-03.jpg" alt="Levi and Addy sharing a kiss">
+    </button>
+
+    <button class="gallery-card gallery-landscape" type="button">
+        <img src="images/gallery-06.jpg" alt="Levi and Addy sitting together outdoors">
+    </button>
+
+    <button class="gallery-card gallery-portrait" type="button">
+        <img src="images/gallery-04.jpg" alt="Levi and Addy smiling together">
+    </button>
+
+    <button class="gallery-card gallery-wide" type="button">
+        <img src="images/gallery-08.jpg" alt="Levi and Addy posing together outdoors">
+    </button>
+
+    <button class="gallery-card gallery-portrait" type="button">
+        <img src="images/gallery-07.jpg" alt="Levi and Addy smiling together in the garden">
+    </button>
+
+    <button class="gallery-card gallery-landscape" type="button">
+        <img src="images/gallery-02.jpg" alt="Levi and Addy sharing a playful moment">
+    </button>
+
+</section>
+<div class="lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close gallery">
+        ×
+    </button>
+
+    <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous photo">
+        ‹
+    </button>
+
+    <img class="lightbox-image" src="" alt="">
+
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="Next photo">
+        ›
+    </button>
+</div>
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
